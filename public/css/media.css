@@ -1,0 +1,105 @@
+@media screen and (min-width: 800px) {
+    .home_div {
+        display: flex !important;
+        width: 33%;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    /* .main_home_div_1 {
+            width: 80%;
+            border: 1px solid black;
+        } */
+
+    .home_div {
+        display: none;
+        width: 50%;
+        left: 0% !important;
+        right: 0% !important;
+    }
+
+    .about_div {
+        display: flex;
+    }
+
+    .login_head_icon {
+        margin: 10px 0px;
+    }
+
+    .login_head {
+        margin: 10px 0px;
+        font-size: 13px;
+    }
+
+    .home_text {
+        font-size: 12px;
+    }
+
+    .home_icon_div {
+        margin: 10px 0px;
+    }
+
+    .home_icon {
+        font-size: 35px;
+    }
+
+    .home_dot_div {
+        margin: 10px 0px;
+    }
+
+    .home_dot {
+        width: 12px;
+        height: 13px;
+    }
+
+    .about_action_div {
+        margin: 10px 0px;
+    }
+
+    .about_action_btn {
+        font-size: 10px;
+    }
+
+    .login_head_icon {
+        margin: 10px 0px;
+        width: 30px;
+        height: 36px;
+        font-size: 15px;
+    }
+
+    .login_head {
+        font-size: 12px;
+    }
+
+    .login_int {
+        font-size: 10px;
+    }
+
+    .login_icon {
+        font-size: 10px;
+    }
+
+    .login_btn {
+        font-size: 12px;
+
+    }
+
+    .login_social {
+        width: 30px;
+        height: 36px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .home_div {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .home_div {
+        width: 90%;
+    }
+}

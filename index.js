@@ -1,11 +1,12 @@
 const express = require("express");
 const app = express();
-// const hbs = require("hbs");
+const hbs = require("hbs");
 // const bodyParser = require("body-parser");
 // const encoded = bodyParser.urlencoded({ extended: true });
-// app.set("view engine", "hbs");
+app.set("view engine", "hbs");
+hbs.registerPartials(__dirname + "/views/partials");
 const login = require("./route/login");
-const home = require("./route/home");
+const home = require("./route/homeRoute");
 app.use("/public", express.static("public"));
 app.use("/", login);
 app.use("/", home);

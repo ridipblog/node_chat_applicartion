@@ -5,14 +5,12 @@
 
 .main_home_div {
     width: 100%;
-    min-height: 100vh;
-    height: auto;
-    background: #40BFC1;
-
 }
 
 .main_home_div_1 {
-    width: 100%;
+    width: 79%;
+    margin-left: 20%;
+    background: #40BFC1;
 }
 
 .home_div {
@@ -20,27 +18,23 @@
     box-shadow: 4px 4px 7px grey;
     border-radius: 10px;
     padding: 50px 0px;
-    width: 30%;
+    width: 33%;
     /* background-image: linear-gradient(140deg,
             #40BFC1 0% 10%,
             #F6F6F6 0% 90%,
             #40BFC1 0% 10%); */
     background: #F6F6F6;
+    position: relative;
+    cursor: pointer;
 }
 
 .home_div:nth-child(1) {
-
-    scale: 0.5;
-}
-
-.home_div:nth-child(2) {
-    width: 30%;
-    scale: 0.5;
-    z-index: 99;
+    left: 15%;
 }
 
 .home_div:nth-child(3) {
-    scale: 1;
+    /* scale: 1; */
+    right: 15%;
 }
 
 .login_head_icon {
@@ -94,7 +88,7 @@
 }
 
 .login_btn {
-    padding: 10px 50px;
+    padding: 5px 50px;
     font-size: 15px;
     background: #6867AE;
     font-family: "Open Sans", sans-serif;
@@ -165,4 +159,103 @@
     color: #40BFC1;
     width: 90%;
     text-align: center;
+}
+
+.home_dot_div {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.home_dot {
+    width: 16px;
+    background-color: #9BCFFC;
+    border-radius: 50%;
+    height: 17px;
+}
+
+.home_dot:nth-child(1) {
+    background: grey;
+}
+
+.about_action_div {
+    width: 100%;
+    flex-direction: column;
+    flex-flow: column;
+    margin: 30px 0px;
+}
+
+.about_action_btn {
+    background-color: #55ACEE;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 5px 30px;
+    margin: 10px 0px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.about_action_btn:last-child {
+    background: #475993;
+    padding: 5px 33px;
+}
+
+.about_div_text {
+    width: 100%;
+    display: none;
+    justify-content: center;
+}
+
+.about_div_text:nth-child(1) {
+    display: flex;
+}
+
+
+.login_side_nav {
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #242527;
+    border: 1px solid black;
+}
+
+.login_side_nav_1 {
+    flex-direction: column;
+    flex-flow: column;
+    height: 100vh;
+    overflow: scroll;
+    justify-content: start;
+}
+
+.login_side_nav_1 p {
+    font-size: 18px;
+    margin: 10px 0px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.login_side_nav_1::-webkit-scrollbar {
+    width: 0px;
+}
+
+.login_side_nav_icon {
+    width: 36px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #3A3B3D;
+    color: white;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.login_side_nav_icon:hover {
+    background: #7265F0;
 }

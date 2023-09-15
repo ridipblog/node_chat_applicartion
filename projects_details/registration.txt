@@ -1,0 +1,16 @@
+1. User Details For Registration ->
+    a. User Name required
+    b. User Email ID required
+    c. User Unique Name ->
+        * If user want it then user can 
+            update it manualy after registration 
+            and login in profile page.
+    d. Profile Picture ->
+        * If user register using social auth then
+            after login  user can upload  profile 
+            Picture.
+    e. Password required -> 
+        * If user register using social auth then
+            after login  user can update password.
+    f. If user want two step verification on account 
+        user can apply for it after login .

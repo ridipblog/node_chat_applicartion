@@ -24,26 +24,26 @@
     {{>login_side_nav}}
     <div class="flex_div main_home_div_1">
 
-      <form class="flex_div registration_div home_div">
+      <form method="post" action="registration" class="flex_div registration_div home_div" id="registration_form">
         <span class="login_head_icon"><i class="fa fa-user"></i></span>
         <h1 class="login_head">Sign Up</h1>
         <div class="flex_div login_div_1">
           <div class="flex_div login_div_int">
             <span class="login_icon"><i class="fa fa-envelope"></i></span>
-            <input type="email" name="login_email" class="login_int" placeholder="Login Email" />
+            <input type="email" name="registration_email" class="login_int" placeholder="Registration Email" />
           </div>
           <div class="flex_div login_div_int">
             <span class="login_icon"><i class="fa fa-address-card"></i></span>
-            <input type="text" name="login_unique_name" class="login_int" placeholder="Unique Name" />
+            <input type="text" name="registrartion_name" class="login_int" placeholder="Unique Name" />
           </div>
           <div class="flex_div login_div_int">
             <span class="login_icon"><i class="fa fa-lock"></i></span>
-            <input type="password" class="login_int" placeholder="Login Password" />
+            <input type="password" name="registration_password" class="login_int" placeholder="Registration Password" />
           </div>
           <button class="login_btn">Sign In</button>
           <a href="" class="login_a">Already I Have An Account ! </a>
           <div class="flex_div login_social_account">
-            <a href="" class="login_social"><i class="fa-brands fa-google"></i></a>
+            <a href="/auth/google" class="login_social"><i class="fa-brands fa-google"></i></a>
             <a href="" class="login_social"><i class="fa-brands fa-facebook"></i></a>
             <a href="" class="login_social"><i class="fa-brands fa-github"></i></a>
           </div>
@@ -113,6 +113,7 @@
   </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="../public/js/home.js"></script>
+  <script src="../public/js/registration.js"></script>
   <script>
     function showLogin(index) {
       var window_width = window.innerWidth;
